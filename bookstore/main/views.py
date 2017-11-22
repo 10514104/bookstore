@@ -8,4 +8,11 @@ def main(request):
     '''
     context = {'now':datetime.datetime.now()}
     return render(request, 'main/main.html', context)
-# Create your views here.
+
+def contact(request):
+    '''
+    Render the contact page
+    '''
+    return render(request, 'main/contact.html')
+
+
