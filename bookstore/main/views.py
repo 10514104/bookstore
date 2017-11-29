@@ -6,7 +6,7 @@ def main(request):
     '''
     Show 'Hello world!' in the main page
     '''
-    context = {'now':datetime.datetime.now()}
+    context = {'now':int(datetime.datetime.now().strftime("%H"))}
     return render(request, 'main/main.html', context)
 
 def contact(request):

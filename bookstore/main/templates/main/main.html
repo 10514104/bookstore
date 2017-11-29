@@ -10,5 +10,11 @@
     {% include 'main/menu.html' %}
     <h2>歡迎光臨本書店</h2>
     <p>{{ now }}</p>
+    {% if now < 12 %}
+      <P>早安</P>
+    {% else %}
+      <P>午安</P>
+    {% endif %}
+    <img src="../../static/main/img/0.jpg" alt="book">
   </body>
 </html>
